@@ -1,1 +1,0 @@
-let print = console.log
