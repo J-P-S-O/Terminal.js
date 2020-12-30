@@ -11,5 +11,8 @@ rl.question(">" , function(res) {
     return res;
     
 });
+rl.on("close", function() {
+    return undefined;
+})
 
 }
