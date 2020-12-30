@@ -1,11 +1,13 @@
-exports.in = function(query){
+exports.in = function(){
+
 const readline = require("readline");
+
 const rl = readline.createInterface({
     input: process.stdin,
     output: process.stdout
 });
 
-rl.question(query || "" , function(res) {
+rl.question(">" , function(res) {
     return res;
     
 });
