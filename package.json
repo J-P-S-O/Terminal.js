@@ -4,7 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "npm i -g pkg && pkg index.js"
+    "test": "npx standard"
   },
   "repository": {
     "type": "git",
