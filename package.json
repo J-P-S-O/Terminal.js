@@ -2,6 +2,7 @@
   "name": "trm",
   "version": "1.0.0",
   "description": "",
+  "bin" : { "colorizer" : "bin/cli.js"},
   "main": "index.js",
   "scripts": {
     "test": "npx standard"
