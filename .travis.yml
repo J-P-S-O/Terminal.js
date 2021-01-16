@@ -1,7 +1,0 @@
-language: node_js
-node_js:
-  - 14
-jobs:
-  include:
-    - os: osx
-      osx_image: xcode7.2
