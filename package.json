@@ -7,7 +7,7 @@
   },
   "main": "index.js",
   "scripts": {
-    "test": "npx standard"
+    "test": "tsc"
   },
   "repository": {
     "type": "git",
