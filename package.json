@@ -18,5 +18,8 @@
   "bugs": {
     "url": "https://github.com/j-p-s-o/terminal.js/issues"
   },
-  "homepage": "https://github.com/j-p-s-o/terminal.js#readme"
+  "homepage": "https://github.com/j-p-s-o/terminal.js#readme",
+  "devDependencies": {
+    "typescript": "^4.1.3"
+  }
 }
