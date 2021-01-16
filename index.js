@@ -1,4 +1,4 @@
-colors = {}
+var colors = {}
  .reset = "\x1b[0m"
  .bright = "\x1b[1m"
  .Dim = "\x1b[2m"
@@ -24,3 +24,9 @@ colors = {}
  .BgMagenta = "\x1b[45m"
  .BgCyan = "\x1b[46m"
  .BgWhite = "\x1b[47m"
+
+ exports.colorize = (str, color) =>{
+    var newstring = ""
+    newstring = str + colors[color] + colors["Reset"]
+    return newstring
+ }
