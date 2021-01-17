@@ -1,5 +1,5 @@
 {
-  "name": "colorizer",
+  "name": "node-colorizer",
   "version": "1.0.0",
   "description": "colors from your cli",
   "bin": {
