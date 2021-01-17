@@ -1,14 +1,13 @@
 {
   "name": "node-colorizer",
-  "version": "1.0.0",
+  "version": "1.3.1",
   "description": "colors from your cli",
   "bin": {
     "colorizer": "bin/cli.js"
   },
   "main": "index.js",
   "scripts": {
-    "test": "tsc && node tests/test.js",
-    "build": "tsc"
+    "test": "node tests/test.js"
   },
   "repository": {
     "type": "git",
