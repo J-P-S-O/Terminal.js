@@ -1,8 +1,7 @@
-"use strict";
-Object.defineProperty(exports, "__esModule", { value: true });
-var __1 = require("./..");
-var tester = require("./..");
-console.log(__1.default("Hello", "Red"));
+
+import colorizer from "./..";
+import * as tester  from "./..";
+console.log(colorizer("Hello", "Red"));
 for (var i in tester.colors) {
-    console.log(__1.default("Hello colorful world", i));
+    console.log(colorizer("Hello colorful world", i));
 }

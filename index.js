@@ -1,5 +1,5 @@
 
-exports.colors = {
+export var colors = {
     reset: "\x1b[0m",
     bright: "\x1b[1m",
     dim: "\x1b[2m",
@@ -24,10 +24,10 @@ exports.colors = {
     bgcyan: "\x1b[46m",
     bgwhite: "\x1b[47m"
 };
-exports.default = (function (str, color) {
+export default function (str, color) {
     color = color.toLowerCase();
     var newstring = "";
     newstring = exports.colors[color] + str + exports.colors["reset"];
     return newstring;
-});
-exports.cli = {};
+};
+
