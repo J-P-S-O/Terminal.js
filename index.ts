@@ -25,9 +25,14 @@ export var colors = {
  bgcyan : "\x1b[46m",
  bgwhite : "\x1b[47m"
 }
- export default (str, color) =>{
+export default (str, color) =>{
     color = color.toLowerCase()
     var newstring = ""
     newstring = colors[color] + str +  colors["reset"]
     return newstring
+ }
+
+ export var cli = {
+
+    
  }
