@@ -1,6 +1,6 @@
 {
   "name": "node-colorizer",
-  "version": "1.5.2",
+  "version": "2.3.7",
   "description": "colors from your cli",
   "main": "index.js",
   "scripts": {
