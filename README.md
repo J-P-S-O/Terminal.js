@@ -7,7 +7,7 @@ let { colorize } = require("node-colorizer")
 colorize("Hello", "red")
 ```
 You can join more than 1 color with a dot.
-```
+```javascript
 let { colorize } = require("node-colorizer")
 colorize("Hello", "red.bgblue")
 ```
