@@ -26,8 +26,14 @@ exports.colors = {
 };
 exports.colorize = function (str, color) {
     color = color.toLowerCase();
+    many = color.split(".")
     var newstring = "";
-    newstring = exports.colors[color] + str + exports.colors["reset"];
+	for (var i of many){
+	newstring = newstring + exports.colors[i] 
+}
+    newstring += str
+
+  newstring+= exports.colors.reset
     return newstring;
 };
 
