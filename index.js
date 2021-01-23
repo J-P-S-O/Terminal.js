@@ -36,4 +36,19 @@ exports.colorize = function (str, color) {
   newstring+= exports.colors.reset
     return newstring;
 };
+exports.init  = () =>{
+    
+    String.prototype.toColor = (color) =>{
+            color = color.toLowerCase();
+            many = color.split(".")
+            var newstring = "";
+	        for (var i of many){
+	            newstring = newstring + exports.colors[i] 
+}
+            newstring += 
 
+            newstring+= exports.colors.reset
+            return newstring;
+
+    }
+}
