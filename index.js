@@ -44,7 +44,7 @@ export default  () =>{
 
   for ( var i in colors){
     addProperty(i,() => {
-      return colors[i] + this +"" + colors.reset
+       
     } )
   }
 }
