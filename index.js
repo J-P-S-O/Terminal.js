@@ -1,5 +1,5 @@
 
-let colors = {
+exports.colors = {
     reset: "\x1b[0m",
     bright: "\x1b[1m",
     dim: "\x1b[2m",
@@ -24,27 +24,16 @@ let colors = {
     bgcyan: "\x1b[46m",
     bgwhite: "\x1b[47m"
 };
-let colorize = function (str, color) {
+exports.colorize = function (str, color) {
     color = color.toLowerCase();
     many = color.split(".")
     var newstring = "";
 	for (var i of many){
-	newstring = newstring + colors[i]
+	newstring = newstring + exports.colors[i] 
 }
     newstring += str
 
-  newstring+= colors.reset
+  newstring+= exports.colors.reset
     return newstring;
 };
 
-export default  () =>{
-    var addProperty = function(color, func) {
-    String.prototype.__defineGetter__(color, func);
-  };
-
-  for ( var i in colors){
-    addProperty(i,() => {
-       return 0;
-    } )
-  }
-}
